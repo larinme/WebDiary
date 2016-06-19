@@ -11,5 +11,3 @@ hs_err_pid*
 .idea/
 WebDiary.iml
 out/
-src/main/resources/
-src/test/
