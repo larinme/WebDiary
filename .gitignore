@@ -10,5 +10,6 @@
 hs_err_pid*
 .idea/
 WebDiary.iml
-out/
-src/main/java/
+target/*
+src/main/java/ru/spring/
+
