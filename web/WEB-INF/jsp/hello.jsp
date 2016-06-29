@@ -16,7 +16,7 @@
           </tr>
           <tr>
               <td colspan="2">
-                  <input type="submit" value="Войти"/>
+                  <input type="submit" value="Войти "/>
               </td>
           </tr>
       </table>
