@@ -1,9 +1,9 @@
-<%--<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>--%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
-<%--<spring:url value="css/main.css" var="mainCss"/>--%>
+<spring:url value="css/main.css" var="mainCss"/>
 <html>
   <head>
-      <%--<link rel="stylesheet" type="text/css" href="${mainCss}">--%>
+      <link rel="stylesheet" type="text/css" href="${mainCss}">
     <title>WebDiary</title>
   </head>
   <body>
