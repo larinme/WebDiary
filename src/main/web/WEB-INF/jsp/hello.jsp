@@ -7,19 +7,22 @@
     <title>WebDiary</title>
   </head>
   <body>
-  <form method="POST" >
+  <form method="POST" action="/welcome">
       <table>
           <tr>
-              <td>Имя пользователя:</td>
-              <td><input name="login" type="text"/></td>
+              <td><label for = "login">Имя пользователя:</label></td>
+              <td><input id="login" name="login" type="text"/></td>
           </tr>
           <tr>
-              <td>Пароль:</td>
-              <td><input name="password" type="password"/></td>
+              <td><label for = "password">Пароль:</label></td>
+              <td><input id="password" name="password" type="password"/></td>
           </tr>
           <tr>
-              <td colspan="2">
+              <td colspan="1" >
                   <input type="submit" value="Войти"/>
+              </td>
+              <td colspan="1">
+                  <a href="/reg">Регистрация</a>
               </td>
           </tr>
       </table>
