@@ -1,4 +1,5 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
 <spring:url value="css/main.css" var="mainCss"/>
 <html>
@@ -7,7 +8,7 @@
     <title>WebDiary</title>
   </head>
   <body>
-  <form method="POST" action="/welcome">
+  <form:form method="POST" action="/" commandName="user">
       <table>
           <tr>
               <td><label for = "login">Имя пользователя:</label></td>
@@ -18,14 +19,17 @@
               <td><input id="password" name="password" type="password"/></td>
           </tr>
           <tr>
+              <td>
+                  <input type="checkbox" name="admin">
+              </td>
               <td colspan="1" >
                   <input type="submit" value="Войти"/>
               </td>
               <td colspan="1">
-                  <a href="/reg">Регистрация</a>
+                  <a href="/signUp">Регистрация</a>
               </td>
           </tr>
       </table>
-  </form>
+  </form:form>
   </body>
 </html>
