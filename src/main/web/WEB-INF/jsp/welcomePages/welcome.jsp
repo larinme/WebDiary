@@ -6,16 +6,5 @@
 </head>
 <body>
  <a href="/signIn">Войти</a>
-<%  User theUser = (User) request.getAttribute("user");
-   if (theUser != null){
-   if (theUser.isAdmin()) {
-     out.print("Hello, Admin");
-       }
-    else{
-        out.println("Hello, User");
-    }
-   }
-
-%>
 </body>
 </html>

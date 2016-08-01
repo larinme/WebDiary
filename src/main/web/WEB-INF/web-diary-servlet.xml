@@ -18,7 +18,12 @@
 
     <mvc:annotation-driven/>
 
-
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/"/>
+            <bean class="com.webdiary.interceptors.CheckAdminInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
 
 
 

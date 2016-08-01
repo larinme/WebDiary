@@ -29,14 +29,19 @@ public class LoginController {
 
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("user", user);
-        modelAndView.setViewName("welcome");
+        modelAndView.setViewName("welcomePages/welcome");
 
         return modelAndView;
     }
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public static String welcome(ModelAndView modelAndView){
 
-        return "welcome";
+        return "welcomePages/welcome";
+    }
+
+    @RequestMapping(value = "/admin")
+    public static String admin(ModelMap modelMap){
+        return "welcomePages/welcomeAdmin";
     }
 
 
